@@ -1,0 +1,18 @@
+# Environment Variables & Secrets
+.env
+.env.local
+*.env
+
+# Dependencies & Build Directories
+node_modules/
+backend/target/
+frontend/dist/
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Logs
+*.log
