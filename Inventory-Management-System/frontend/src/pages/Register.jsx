@@ -84,7 +84,51 @@ export default function Register() {
 
     return (
         <div className="auth-page">
-            <form className="auth-form" onSubmit={handleSubmit}>
+            <div className="auth-container">
+
+                {/* InventoryHub Branding */}
+                <div className="auth-brand">
+                    <div className="auth-brand-logo">
+                        <svg
+                            width="34"
+                            height="34"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12 2L21 7V17L12 22L3 17V7L12 2Z"
+                                stroke="currentColor"
+                                strokeWidth="1.8"
+                                strokeLinejoin="round"
+                            />
+                            <path
+                                d="M3 7L12 12L21 7"
+                                stroke="currentColor"
+                                strokeWidth="1.8"
+                                strokeLinejoin="round"
+                            />
+                            <path
+                                d="M12 12V22"
+                                stroke="currentColor"
+                                strokeWidth="1.8"
+                            />
+                        </svg>
+
+                        <span className="brand-inventory">
+                        Inventory
+                    </span>
+                        <span className="brand-hub">
+                        Hub
+                    </span>
+                    </div>
+
+                    <p className="auth-welcome">
+                        Welcome to InventoryHub
+                    </p>
+                </div>
+
+                <form className="auth-form" onSubmit={handleSubmit}>
                 <h1>Create Account</h1>
 
                 {serverError && (
@@ -156,7 +200,8 @@ export default function Register() {
                     Already have an account?{" "}
                     <Link to="/login">Log In</Link>
                 </p>
-            </form>
+                </form>
+            </div>
         </div>
     );
 }

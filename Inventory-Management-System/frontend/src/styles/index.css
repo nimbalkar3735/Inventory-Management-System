@@ -1280,3 +1280,55 @@ textarea {
   box-shadow: none;
   transform: none;
 }
+/* ============================================================
+   AUTH BRANDING
+   ============================================================ */
+
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* InventoryHub logo above authentication card */
+.auth-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.auth-brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.auth-brand-logo svg {
+  margin-right: 0.45rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.brand-inventory {
+  color: white;
+}
+
+.brand-hub {
+  color: #818cf8;
+}
+
+.auth-welcome {
+  margin-top: 0.45rem;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
